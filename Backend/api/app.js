@@ -4,16 +4,16 @@ import cors from "cors";
 import "dotenv/config"; // 'dotenv'.config()
 import { networkInterfaces } from "os";
 
-import connectDB from "./src/config/mongoDB.js";
-import connectCloudinary from "./src/config/cloudinary.js";
+import connectDB from "../src/config/mongoDB.js";
+import connectCloudinary from "../src/config/cloudinary.js";
 
-import userRouter from "./src/routes/userRoute.js";
-import productRouter from "./src/routes/productRoute.js";
-import cartRouter from "./src/routes/cartRoute.js";
-import orderRouter from "./src/routes/orderRoute.js";
+import userRouter from "../src/routes/userRoute.js";
+import productRouter from "../src/routes/productRoute.js";
+import cartRouter from "../src/routes/cartRoute.js";
+import orderRouter from "../src/routes/orderRoute.js";
 
-import notFound from "./src/middleware/not-found.js";
-import errorHandler from "./src/middleware/error-handler.js";
+import notFound from "../src/middleware/not-found.js";
+import errorHandler from "../src/middleware/error-handler.js";
 
 // App Config
 const app = express();
